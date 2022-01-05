@@ -1,0 +1,86 @@
+
+rodrigo.bispo@mga-bispo MINGW64 ~/Pictures/AG-Qualidade/GIT (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/rodrigo.bispo/Pictures/AG-Qualidade/GIT/.git/
+
+rodrigo.bispo@mga-bispo MINGW64 ~/Pictures/AG-Qualidade/GIT (master)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+rodrigo.bispo@mga-bispo MINGW64 ~/Pictures/AG-Qualidade/GIT (master)
+$ git add .
+
+rodrigo.bispo@mga-bispo MINGW64 ~/Pictures/AG-Qualidade/GIT (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    a.txt
+        new file:   c.txt
+
+
+rodrigo.bispo@mga-bispo MINGW64 ~/Pictures/AG-Qualidade/GIT (master)
+$ git commit -m "teste bispo"
+[master c9ff1cc] teste bispo
+ 2 files changed, 1 insertion(+)
+ delete mode 100644 a.txt
+ create mode 100644 c.txt
+
+rodrigo.bispo@mga-bispo MINGW64 ~/Pictures/AG-Qualidade/GIT (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+rodrigo.bispo@mga-bispo MINGW64 ~/Pictures/AG-Qualidade/GIT (master)
+$ git branch -m main
+
+rodrigo.bispo@mga-bispo MINGW64 ~/Pictures/AG-Qualidade/GIT (main)
+$ git remote add origin https://github.com/rodrigo-bispo/Cypress.git
+error: remote origin already exists.
+
+rodrigo.bispo@mga-bispo MINGW64 ~/Pictures/AG-Qualidade/GIT (main)
+$ ^C
+
+rodrigo.bispo@mga-bispo MINGW64 ~/Pictures/AG-Qualidade/GIT (main)
+$ git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/rodrigo-bispo/Cypress.git'
+
+rodrigo.bispo@mga-bispo MINGW64 ~/Pictures/AG-Qualidade/GIT (main)
+$ ^C
+
+rodrigo.bispo@mga-bispo MINGW64 ~/Pictures/AG-Qualidade/GIT (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+rodrigo.bispo@mga-bispo MINGW64 ~/Pictures/AG-Qualidade/GIT (main)
+$ git checkout master
+error: pathspec 'master' did not match any file(s) known to git
+
+rodrigo.bispo@mga-bispo MINGW64 ~/Pictures/AG-Qualidade/GIT (main)
+$ git checkout main
+Already on 'main'
+
+rodrigo.bispo@mga-bispo MINGW64 ~/Pictures/AG-Qualidade/GIT (main)
+$ git push -u origin main
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (8/8), 623 bytes | 124.00 KiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/rodrigo-bispo/Cypress.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+rodrigo.bispo@mga-bispo MINGW64 ~/Pictures/AG-Qualidade/GIT (main)
+$ git push -u origin main
+Everything up-to-date
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+rodrigo.bispo@mga-bispo MINGW64 ~/Pictures/AG-Qualidade/GIT (main)
+$
